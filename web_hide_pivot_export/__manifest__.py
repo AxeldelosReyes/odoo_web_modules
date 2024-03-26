@@ -4,9 +4,9 @@
 {
     'name': 'Web Hide Pivot Export',
     'description': """
-        Ability to hide export for users without custom group""",
+        Ability to hide export for users without custom group (Odoo Enterprise version)""",
     'version': '15.0.1.0.0',
-    'license': 'AGPL-3',
+    'license': 'OPL-1',
     'author': 'Munin',
     'depends': [
         'web', 'documents_spreadsheet'
