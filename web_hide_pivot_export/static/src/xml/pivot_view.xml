@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+        <t t-name="disable_crm_lead_pivot_export_btn"
+           t-inherit="documents_spreadsheet.PivotView.buttons"
+           t-inherit-mode="extension" owl="1">
+        <xpath expr="//button[hasclass('o_pivot_download')]" position="replace">
+                        <t t-if="canViewExport">
+                            <button class="btn btn-secondary fa fa-download o_pivot_download"
+                                    t-on-click="onDownloadButtonClicked"
+                                    data-tooltip="Download xlsx" aria-label="Download xlsx"
+                                    t-attf-disabled="{{noDataDisplayed ? 'disabled' : false}}"/>
+                        </t>
+
+        </xpath>
+    </t>
+
+</templates>
+
