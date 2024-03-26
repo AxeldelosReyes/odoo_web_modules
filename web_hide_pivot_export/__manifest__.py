@@ -8,6 +8,7 @@
     'version': '15.0.1.0.0',
     'license': 'OPL-1',
     'author': 'Munin',
+    'website': 'https://github.com/AxeldelosReyes/odoo_web_modules',
     'depends': [
         'web', 'documents_spreadsheet'
     ],

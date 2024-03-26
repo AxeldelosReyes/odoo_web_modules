@@ -13,7 +13,6 @@ ListRenderer.include({
      * @private
      */
     _renderFooter: function () {
-        console.log("render footer", this)
         const $footer = this._super.apply(this, arguments);
         if (this.addTrashIcon && this.state.model === 'sale.order.line') {
             $footer.find('tr td:last').remove();
@@ -28,7 +27,6 @@ ListRenderer.include({
      * @private
      */
     _renderHeader: function () {
-        console.log("render header", this)
         var $thead = this._super.apply(this, arguments);
         if (this.addTrashIcon && this.state.model === 'sale.order.line') {
             $thead.find('tr td.o_list_record_remove_header').remove();
@@ -58,7 +56,6 @@ ListRenderer.include({
     _renderRow: function (record, index) {
 
         var $row = this._super.apply(this, arguments);
-        console.log("render row", this)
         if (this.addTrashIcon && this.state.model === 'sale.order.line') {
             $row.find('td.o_list_record_remove').remove();
 

@@ -16,7 +16,16 @@ Usage
 
 To use this module, you need to:
 
-#. Go to ...
+#. install, restart window if needed.
+
+
+.. image:: static/description/img.png
+    :alt: web_sale_move_trash_icon before
+    :width: 100%
+
+.. image:: static/description/img_1.png
+    :alt: web_sale_move_trash_icon after
+    :width: 100%
 
 
 Changelog
