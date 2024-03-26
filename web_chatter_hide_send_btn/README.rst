@@ -19,11 +19,11 @@ To configure this module, you need to:
 Usage
 =====
 
-.. img:: /web_chatter_hide_send_btn/static/description/img_1.png
+.. image:: static/description/img_1.png
     :alt: web_chatter_hide_send_btn before
     :width: 100%
 
-.. img:: /web_chatter_hide_send_btn/static/description/img.png
+.. image:: static/description/img.png
     :alt: web_chatter_hide_send_btn after
     :width: 100%
 
