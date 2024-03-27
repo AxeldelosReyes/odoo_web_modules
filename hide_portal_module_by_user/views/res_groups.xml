@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2026 Munin
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record model="ir.ui.view" id="res_groups_form_view">
+        <field name="name">res.groups.form (in hide_portal_module_by_user)</field>
+        <field name="model">res.groups</field>
+        <field name="inherit_id" ref="base.view_groups_form"/>
+        <field name="arch" type="xml">
+            <!-- TODO -->
+            <field name="share" position="after">
+                <field name="portal_url" readonly="1"
+                       attrs="{'invisible':[('portal_url','=',False)]}"/>
+            </field>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="res_groups_search_view">
+        <field name="name">res.groups.search (in hide_portal_module_by_user)</field>
+        <field name="model">res.groups</field>
+        <field name="inherit_id" ref="base.view_groups_search"/>
+        <field name="arch" type="xml">
+            <!-- TODO -->
+            <field name="share" position="after">
+                <filter name="portal_group" string="Portal Groups"
+                        domain="[('portal_url','!=',False)]"/>
+            </field>
+        </field>
+    </record>
+
+
+</odoo>
