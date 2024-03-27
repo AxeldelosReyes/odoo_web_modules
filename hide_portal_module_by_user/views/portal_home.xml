@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template inherit_id="portal.portal_docs_entry" id="hide_portal_user">
+            <xpath expr="//a" position="replace">
+                <t t-if="request.env.user.validate_portal_url(url)">
+                    <a t-att-href="url" t-att-title="title"
+                       class="list-group-item list-group-item-action d-flex align-items-center justify-content-between">
+                        <t t-esc="title"/>
+                        <t t-if='count'>
+                            <span class="badge badge-secondary badge-pill" t-esc="count"/>
+                        </t>
+                        <t t-elif="placeholder_count">
+                            <span class="badge badge-secondary badge-pill"
+                                  t-att-data-placeholder_count="placeholder_count">
+                                <i class="fa fa-spin fa-circle-o-notch"></i>
+                            </span>
+                        </t>
+                    </a>
+                </t>
+            </xpath>
+        </template>
+    </data>
+</odoo>
